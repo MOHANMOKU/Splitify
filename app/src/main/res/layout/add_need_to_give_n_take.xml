@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/addimage"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:outlineSpotShadowColor="@color/black"
+        app:cardBackgroundColor="#887E98"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_account_circle_24"/>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Further Image cannot be updated"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Add Image"
+        android:id="@+id/add_Button1"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D3D1D1">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:outlineProvider="paddedBounds"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/name"
+                android:background="#D3D1D1"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="25dp"/>
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount : "
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D3D1D1">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:outlineProvider="paddedBounds"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/amount"
+            android:background="#D3D1D1"
+            android:ems="4"
+            android:inputType="number"
+            android:textSize="25dp"/>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No : "
+                android:textColor="@color/white"
+                android:textSize="25dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="50dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D3D1D1">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:outlineProvider="paddedBounds"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:ems="11"
+                android:background="#D3D1D1"
+                android:id="@+id/phNum"
+                android:inputType="number"
+                android:textSize="25dp"/>
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date : "
+                android:textSize="25dp"
+                android:textColor="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="50dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D3D1D1">
+            <EditText
+                android:id="@+id/dayDate2"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="#D3D1D1"
+                android:inputType="text"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="ADD"
+        android:textColor="@color/black"
+        android:id="@+id/addAction"/>
+
+</LinearLayout>

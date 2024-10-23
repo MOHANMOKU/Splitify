@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainDayActivity"
+    android:gravity="center_horizontal">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:foregroundGravity="center"
+        android:background="#3d3c3a"
+        android:id="@+id/bottom_navigation_bar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="25dp"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardBackgroundColor="#3d3c3a"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp"
+                android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9A74DD"
+                android:backgroundTint="#69F86F"
+                android:scaleType="fitCenter"
+                android:src="@drawable/done"
+                android:contentDescription="add"
+                android:id="@+id/completeButton"/>
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="25dp"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardBackgroundColor="#9A74DD"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9A74DD"
+                android:backgroundTint="#69F86F"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_button"
+                android:contentDescription="add"
+                android:id="@+id/add_Button3"/>
+
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:background="@drawable/activity_bg"
+    android:layout_centerHorizontal="true"
+    android:layout_above="@+id/bottom_navigation_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textInThis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number Of People : "
+        android:background="#3d3c3a"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#CAC6B8">
+<LinearLayout
+    android:layout_width="wrap_content"
+
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:background="#CAC6B8">
+
+
+    <EditText
+        android:layout_marginLeft="7dp"
+        android:id="@+id/numberOfPeople"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="#CAC6B8"
+        android:ems="2"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/peopleButton"/>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/nameComplete"/>
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

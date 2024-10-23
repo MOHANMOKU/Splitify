@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/side_activity"
+    android:layout_height="match_parent"
+    tools:context=".NeedToGive">
+
+    <RelativeLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerInGive"/>
+
+
+        <RelativeLayout
+            android:layout_gravity="bottom|end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:outlineSpotShadowColor="@color/black"
+                app:cardBackgroundColor="#9A74DD"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9A74DD"
+                    android:backgroundTint="#69F86F"
+                    android:contentDescription="add"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/add_button"
+                    android:id="@+id/addButtonInGive"/>
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

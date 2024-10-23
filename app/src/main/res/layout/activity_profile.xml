@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/addimage"
+    tools:context=".Profile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardBackgroundColor="#887E98"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:id="@+id/imgSet"
+                android:src="@drawable/userprofile1"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Edit Image"
+            android:textStyle="bold"
+            android:id="@+id/openGallery"
+            android:layout_marginBottom="50dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name : "
+                    android:textColor="@color/white"
+                    android:textSize="25dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="50dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#D3D1D1">
+
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txtVName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:outlineProvider="paddedBounds"
+                    android:textColor="@color/black"
+                    android:background="#D3D1D1"
+                    android:textStyle="bold"
+                    android:hint="Name"
+                    android:ems="10"
+                    android:textSize="25dp"/>
+                </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No : "
+                    android:textColor="@color/white"
+                    android:textSize="25dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="50dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#D3D1D1">
+                <EditText
+                    android:id="@+id/txtPNum"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:outlineProvider="paddedBounds"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:hint="phNum"
+                    android:background="#D3D1D1"
+                    android:ems="11"
+                    android:inputType="number"
+                    android:textSize="25dp"/>
+                </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="UPDATE"
+            android:textStyle="bold"
+            android:id="@+id/update"
+            android:layout_marginBottom="100dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

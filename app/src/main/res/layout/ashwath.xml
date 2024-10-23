@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#B1AFB1"
+        android:layout_marginTop="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="#B1AFB1">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D8BABA"
+                android:textSize="25dp"
+                android:layout_gravity="start"
+                android:id="@+id/nameOfPerson"
+                android:layout_marginRight="10dp"
+                android:inputType="text"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="50dp"
+                app:cardBackgroundColor="#8A8686">
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:background="#8A8686"
+                android:textSize="25dp"
+                android:inputType="number"
+                android:id="@+id/amountOfPerson"
+                android:ems="3"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
